@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841C34D41CC006E80041FD4B /* listOfSongsSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C34D31CC006E80041FD4B /* listOfSongsSingleton.m */; };
+		841C34D71CC0218F0041FD4B /* SongStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C34D61CC0218F0041FD4B /* SongStructure.m */; };
+		8432A7D11CA47995009D9ACC /* playListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432A7D01CA47995009D9ACC /* playListViewController.m */; };
+		843445AA1D804DDB00ABE1D5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 843445A71D804DDB00ABE1D5 /* play.png */; };
+		843445AB1D804DDB00ABE1D5 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 843445A81D804DDB00ABE1D5 /* pause.png */; };
+		843445AC1D804DDB00ABE1D5 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 843445A91D804DDB00ABE1D5 /* download.png */; };
+		8434A3AF1CC56424003CF8CD /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8434A3AD1CC56424003CF8CD /* db.xcdatamodeld */; };
+		8434A3B51CC567E0003CF8CD /* SongTable+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434A3B21CC567E0003CF8CD /* SongTable+CoreDataProperties.m */; };
+		8434A3B61CC567E0003CF8CD /* SongTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434A3B41CC567E0003CF8CD /* SongTable.m */; };
+		8441735C1CAD3DC700D7E33D /* cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8441735B1CAD3DC700D7E33D /* cell.xib */; };
+		8441735F1CAD551C00D7E33D /* songTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441735E1CAD551C00D7E33D /* songTableViewCell.m */; };
+		8444203E1C8DBC8900A0B35C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444203D1C8DBC8900A0B35C /* main.m */; };
+		844420411C8DBC8900A0B35C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844420401C8DBC8900A0B35C /* AppDelegate.m */; };
+		844420441C8DBC8900A0B35C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844420431C8DBC8900A0B35C /* FirstViewController.m */; };
+		8444204A1C8DBC8900A0B35C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844420481C8DBC8900A0B35C /* Main.storyboard */; };
+		8444204C1C8DBC8900A0B35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8444204B1C8DBC8900A0B35C /* Assets.xcassets */; };
+		8444204F1C8DBC8900A0B35C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444204D1C8DBC8900A0B35C /* LaunchScreen.storyboard */; };
+		844F27DE1D033EBF008B1653 /* vkplay30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 844F27DD1D033EBF008B1653 /* vkplay30x30.png */; };
+		84D7FB171D99BAAC00CDC9D6 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D7FB161D99BAAC00CDC9D6 /* AudioController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BA373B53F3E1591DF67B54E /* Pods-vkPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vkPlay/Pods-vkPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		841C34D21CC006E80041FD4B /* listOfSongsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listOfSongsSingleton.h; sourceTree = "<group>"; };
+		841C34D31CC006E80041FD4B /* listOfSongsSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listOfSongsSingleton.m; sourceTree = "<group>"; };
+		841C34D51CC0218F0041FD4B /* SongStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongStructure.h; sourceTree = "<group>"; };
+		841C34D61CC0218F0041FD4B /* SongStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongStructure.m; sourceTree = "<group>"; };
+		8432A7CF1CA47995009D9ACC /* playListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playListViewController.h; sourceTree = "<group>"; };
+		8432A7D01CA47995009D9ACC /* playListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = playListViewController.m; sourceTree = "<group>"; };
+		843445A71D804DDB00ABE1D5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		843445A81D804DDB00ABE1D5 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		843445A91D804DDB00ABE1D5 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		8434A3AE1CC56424003CF8CD /* db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db.xcdatamodel; sourceTree = "<group>"; };
+		8434A3B11CC567E0003CF8CD /* SongTable+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SongTable+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8434A3B21CC567E0003CF8CD /* SongTable+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SongTable+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8434A3B31CC567E0003CF8CD /* SongTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongTable.h; sourceTree = "<group>"; };
+		8434A3B41CC567E0003CF8CD /* SongTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongTable.m; sourceTree = "<group>"; };
+		8441735B1CAD3DC700D7E33D /* cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cell.xib; sourceTree = "<group>"; };
+		8441735D1CAD551C00D7E33D /* songTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = songTableViewCell.h; sourceTree = "<group>"; };
+		8441735E1CAD551C00D7E33D /* songTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = songTableViewCell.m; sourceTree = "<group>"; };
+		844420391C8DBC8900A0B35C /* vkPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8444203D1C8DBC8900A0B35C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8444203F1C8DBC8900A0B35C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		844420401C8DBC8900A0B35C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		844420421C8DBC8900A0B35C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		844420431C8DBC8900A0B35C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		844420491C8DBC8900A0B35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8444204B1C8DBC8900A0B35C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8444204E1C8DBC8900A0B35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		844420501C8DBC8900A0B35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844F27DD1D033EBF008B1653 /* vkplay30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vkplay30x30.png; sourceTree = "<group>"; };
+		84D7FB151D99BAAC00CDC9D6 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		84D7FB161D99BAAC00CDC9D6 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
+		DA1466A14151F7ECB79D49BE /* Pods-vkPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-vkPlay/Pods-vkPlay.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		844420361C8DBC8900A0B35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DCB56FA6DDB4876855456CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35D1FD80C9243428DA5723A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BA373B53F3E1591DF67B54E /* Pods-vkPlay.debug.xcconfig */,
+				DA1466A14151F7ECB79D49BE /* Pods-vkPlay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8434A3B01CC567B3003CF8CD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8434A3B11CC567E0003CF8CD /* SongTable+CoreDataProperties.h */,
+				8434A3B21CC567E0003CF8CD /* SongTable+CoreDataProperties.m */,
+				8434A3B31CC567E0003CF8CD /* SongTable.h */,
+				8434A3B41CC567E0003CF8CD /* SongTable.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		8440836A1D88201A000F5800 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				84D7FB151D99BAAC00CDC9D6 /* AudioController.h */,
+				84D7FB161D99BAAC00CDC9D6 /* AudioController.m */,
+				841C34D51CC0218F0041FD4B /* SongStructure.h */,
+				841C34D61CC0218F0041FD4B /* SongStructure.m */,
+				841C34D21CC006E80041FD4B /* listOfSongsSingleton.h */,
+				841C34D31CC006E80041FD4B /* listOfSongsSingleton.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		844420301C8DBC8900A0B35C = {
+			isa = PBXGroup;
+			children = (
+				8444203B1C8DBC8900A0B35C /* vkPlay */,
+				8444203A1C8DBC8900A0B35C /* Products */,
+				35D1FD80C9243428DA5723A8 /* Pods */,
+				2DCB56FA6DDB4876855456CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8444203A1C8DBC8900A0B35C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844420391C8DBC8900A0B35C /* vkPlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8444203B1C8DBC8900A0B35C /* vkPlay */ = {
+			isa = PBXGroup;
+			children = (
+				8444203F1C8DBC8900A0B35C /* AppDelegate.h */,
+				844420401C8DBC8900A0B35C /* AppDelegate.m */,
+				8444204D1C8DBC8900A0B35C /* LaunchScreen.storyboard */,
+				844420481C8DBC8900A0B35C /* Main.storyboard */,
+				8441735B1CAD3DC700D7E33D /* cell.xib */,
+				8440836A1D88201A000F5800 /* model */,
+				8434A3B01CC567B3003CF8CD /* CoreData */,
+				844420421C8DBC8900A0B35C /* FirstViewController.h */,
+				844420431C8DBC8900A0B35C /* FirstViewController.m */,
+				8432A7CF1CA47995009D9ACC /* playListViewController.h */,
+				8432A7D01CA47995009D9ACC /* playListViewController.m */,
+				8441735D1CAD551C00D7E33D /* songTableViewCell.h */,
+				8441735E1CAD551C00D7E33D /* songTableViewCell.m */,
+				8434A3AD1CC56424003CF8CD /* db.xcdatamodeld */,
+				8444204B1C8DBC8900A0B35C /* Assets.xcassets */,
+				844420501C8DBC8900A0B35C /* Info.plist */,
+				8444203C1C8DBC8900A0B35C /* Supporting Files */,
+			);
+			path = vkPlay;
+			sourceTree = "<group>";
+		};
+		8444203C1C8DBC8900A0B35C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844F27DD1D033EBF008B1653 /* vkplay30x30.png */,
+				843445A71D804DDB00ABE1D5 /* play.png */,
+				843445A81D804DDB00ABE1D5 /* pause.png */,
+				843445A91D804DDB00ABE1D5 /* download.png */,
+				8444203D1C8DBC8900A0B35C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		844420381C8DBC8900A0B35C /* vkPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844420531C8DBC8900A0B35C /* Build configuration list for PBXNativeTarget "vkPlay" */;
+			buildPhases = (
+				EB8CF7C5DE92764EFAC7EF05 /* [CP] Check Pods Manifest.lock */,
+				844420351C8DBC8900A0B35C /* Sources */,
+				844420361C8DBC8900A0B35C /* Frameworks */,
+				844420371C8DBC8900A0B35C /* Resources */,
+				7AE8E9FC897753E0B1638EB0 /* [CP] Embed Pods Frameworks */,
+				F9F900FC6C389F18EB37C0BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vkPlay;
+			productName = vkPlay;
+			productReference = 844420391C8DBC8900A0B35C /* vkPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844420311C8DBC8900A0B35C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Boris-Mikhalev";
+				TargetAttributes = {
+					844420381C8DBC8900A0B35C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 565ER3NK7L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 844420341C8DBC8900A0B35C /* Build configuration list for PBXProject "vkPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 844420301C8DBC8900A0B35C;
+			productRefGroup = 8444203A1C8DBC8900A0B35C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844420381C8DBC8900A0B35C /* vkPlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		844420371C8DBC8900A0B35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8444204F1C8DBC8900A0B35C /* LaunchScreen.storyboard in Resources */,
+				8441735C1CAD3DC700D7E33D /* cell.xib in Resources */,
+				8444204C1C8DBC8900A0B35C /* Assets.xcassets in Resources */,
+				843445AB1D804DDB00ABE1D5 /* pause.png in Resources */,
+				844F27DE1D033EBF008B1653 /* vkplay30x30.png in Resources */,
+				8444204A1C8DBC8900A0B35C /* Main.storyboard in Resources */,
+				843445AA1D804DDB00ABE1D5 /* play.png in Resources */,
+				843445AC1D804DDB00ABE1D5 /* download.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AE8E9FC897753E0B1638EB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vkPlay/Pods-vkPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB8CF7C5DE92764EFAC7EF05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F900FC6C389F18EB37C0BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vkPlay/Pods-vkPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		844420351C8DBC8900A0B35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8432A7D11CA47995009D9ACC /* playListViewController.m in Sources */,
+				8434A3B61CC567E0003CF8CD /* SongTable.m in Sources */,
+				841C34D71CC0218F0041FD4B /* SongStructure.m in Sources */,
+				8441735F1CAD551C00D7E33D /* songTableViewCell.m in Sources */,
+				844420411C8DBC8900A0B35C /* AppDelegate.m in Sources */,
+				844420441C8DBC8900A0B35C /* FirstViewController.m in Sources */,
+				84D7FB171D99BAAC00CDC9D6 /* AudioController.m in Sources */,
+				8444203E1C8DBC8900A0B35C /* main.m in Sources */,
+				8434A3B51CC567E0003CF8CD /* SongTable+CoreDataProperties.m in Sources */,
+				841C34D41CC006E80041FD4B /* listOfSongsSingleton.m in Sources */,
+				8434A3AF1CC56424003CF8CD /* db.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		844420481C8DBC8900A0B35C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844420491C8DBC8900A0B35C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8444204D1C8DBC8900A0B35C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8444204E1C8DBC8900A0B35C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		844420511C8DBC8900A0B35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		844420521C8DBC8900A0B35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		844420541C8DBC8900A0B35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA373B53F3E1591DF67B54E /* Pods-vkPlay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 565ER3NK7L;
+				INFOPLIST_FILE = vkPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.artmisha.vkPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		844420551C8DBC8900A0B35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1466A14151F7ECB79D49BE /* Pods-vkPlay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 565ER3NK7L;
+				INFOPLIST_FILE = vkPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.artmisha.vkPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		844420341C8DBC8900A0B35C /* Build configuration list for PBXProject "vkPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844420511C8DBC8900A0B35C /* Debug */,
+				844420521C8DBC8900A0B35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844420531C8DBC8900A0B35C /* Build configuration list for PBXNativeTarget "vkPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844420541C8DBC8900A0B35C /* Debug */,
+				844420551C8DBC8900A0B35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8434A3AD1CC56424003CF8CD /* db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8434A3AE1CC56424003CF8CD /* db.xcdatamodel */,
+			);
+			currentVersion = 8434A3AE1CC56424003CF8CD /* db.xcdatamodel */;
+			path = db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 844420311C8DBC8900A0B35C /* Project object */;
+}
