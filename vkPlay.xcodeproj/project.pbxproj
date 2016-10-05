@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A00B88A0F891870608F7D3 /* libPods-vkPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C62F7A04C7685C17C0DFA16F /* libPods-vkPlay.a */; };
 		841C34D41CC006E80041FD4B /* listOfSongsSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C34D31CC006E80041FD4B /* listOfSongsSingleton.m */; };
 		841C34D71CC0218F0041FD4B /* SongStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C34D61CC0218F0041FD4B /* SongStructure.m */; };
 		8432A7D11CA47995009D9ACC /* playListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432A7D01CA47995009D9ACC /* playListViewController.m */; };
@@ -60,6 +61,7 @@
 		844F27DD1D033EBF008B1653 /* vkplay30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vkplay30x30.png; sourceTree = "<group>"; };
 		84D7FB151D99BAAC00CDC9D6 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
 		84D7FB161D99BAAC00CDC9D6 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
+		C62F7A04C7685C17C0DFA16F /* libPods-vkPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vkPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1466A14151F7ECB79D49BE /* Pods-vkPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-vkPlay/Pods-vkPlay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A00B88A0F891870608F7D3 /* libPods-vkPlay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		2DCB56FA6DDB4876855456CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C62F7A04C7685C17C0DFA16F /* libPods-vkPlay.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -271,7 +275,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F9F900FC6C389F18EB37C0BB /* [CP] Copy Pods Resources */ = {
