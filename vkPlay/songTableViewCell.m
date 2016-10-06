@@ -34,7 +34,7 @@
     NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
     
     for (int i=0; i<len-4; i++) {
-        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform([letters length])]];
+        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform((unsigned int)[letters length])]];
     }
     
     randomString = [NSMutableString stringWithFormat:@"%@.mp3", randomString];
@@ -62,17 +62,17 @@
             return pathURL;
         } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error)
         {
-            NSLog(@"log: %@", error.description);
+            //NSLog(@"log: %@", error.description);
             if (!error)
             {
-                NSLog(@"File downloaded to: %@", filePath.absoluteString);
+                //NSLog(@"File downloaded to: %@", filePath.absoluteString);
    
                 NSRange range = NSMakeRange(filePath.absoluteString.length-17, 17);
                 NSString* filename = [filePath.absoluteString substringWithRange:range];
                   
                 // add filepath to song in array
                 song.downloadedFilePath =  [NSString stringWithString:filename];
-                NSLog(@"File downloaded to filename:  %@", song.downloadedFilePath);
+                //NSLog(@"File downloaded to filename:  %@", song.downloadedFilePath);
                   
                 // add filepath to song in DB
                 [MagicalRecord saveWithBlock:^(NSManagedObjectContext* localContext)
@@ -89,7 +89,7 @@
                         entitySong.url = song.url;
                         entitySong.downloadedFilePath = song.downloadedFilePath;
                            
-                        NSLog(@"add path to file into DB: %@", entitySong.downloadedFilePath);
+                        //NSLog(@"add path to file into DB: %@", entitySong.downloadedFilePath);
                     }
                        
                     [localContext MR_saveToPersistentStoreWithCompletion:nil];

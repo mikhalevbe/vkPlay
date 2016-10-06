@@ -17,7 +17,7 @@
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
     }
     
-    SCOPE = @[VK_PER_AUDIO]; // VK_PER_NOHTTPS
+    SCOPE = @[VK_PER_AUDIO];
     [[VKSdk initializeWithAppId:@"5254588"] registerDelegate:self];
     [[VKSdk instance] setUiDelegate:self];
     [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
