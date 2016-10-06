@@ -39,12 +39,11 @@
         [config setBool:YES forKey:@"noFirstRun"];
     } else {
         [self updateSongsArrayFromDB];
-        NSLog(@"objects: %d", [listOfSongsSingleton sharedInstance].listOfSongs.count);
     }
 }
 
 - (void)filterButton {
-    NSLog(@"filter button");
+    //NSLog(@"filter button");
     [self.table reloadData];
 }
 
@@ -59,7 +58,7 @@
          
          // parse JSON from VK
          NSData* data = [response.responseString dataUsingEncoding:NSUTF8StringEncoding];
-         NSArray * json = [NSJSONSerialization JSONObjectWithData:data options:nil error:nil];
+         NSArray * json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
          if ([NSJSONSerialization isValidJSONObject:json])
          {
              NSDictionary* response = [json valueForKey:@"response"];
@@ -67,7 +66,7 @@
              for (int i = 0; i < items.count; i++)
              {
                  NSDictionary* aSong = items[i];
-                 NSLog(@"log: %@", [aSong valueForKey:@"artist"]);
+                 //NSLog(@"log: %@", [aSong valueForKey:@"artist"]);
                  [[listOfSongsSingleton sharedInstance].listOfSongs addObject:[[SongStructure alloc] initWithArtist:[aSong valueForKey:@"artist"] Title:[aSong valueForKey:@"title"] Url:[aSong valueForKey:@"url"] Id:[aSong valueForKey:@"id"] downloadPath:@"no path"]];
              }
          }
@@ -92,7 +91,7 @@
                  entitySong.artist = aSong.artist;
                  entitySong.url = aSong.url;
                  entitySong.downloadedFilePath = aSong.downloadedFilePath;
-                 NSLog(@"new saved song: %@", aSong.title);
+                 //NSLog(@"new saved song: %@", aSong.title);
              }
              [localContext MR_saveToPersistentStoreWithCompletion:nil];
              
@@ -118,7 +117,7 @@
          
          // parse JSON from VK
          NSData* data = [response.responseString dataUsingEncoding:NSUTF8StringEncoding];
-         NSArray * json = [NSJSONSerialization JSONObjectWithData:data options:nil error:nil];
+         NSArray * json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
          if ([NSJSONSerialization isValidJSONObject:json])
          {
              NSDictionary* response = [json valueForKey:@"response"];
@@ -135,7 +134,7 @@
                      
                      if (filteredArray.count == 0)
                     {
-                        NSLog(@"add new to array: %@", [aSong valueForKey:@"artist"]);
+                        //NSLog(@"add new to array: %@", [aSong valueForKey:@"artist"]);
                         [[listOfSongsSingleton sharedInstance].listOfSongs addObject:[[SongStructure alloc] initWithArtist:[aSong valueForKey:@"artist"] Title:[aSong valueForKey:@"title"] Url:[aSong valueForKey:@"url"] Id:[aSong valueForKey:@"id"] downloadPath:@"no path"]];
                     }
                      
@@ -178,7 +177,6 @@
              for (SongStructure* aSong in [listOfSongsSingleton sharedInstance].listOfSongs)
              {
                  NSPredicate *filter = [NSPredicate predicateWithFormat:@"idSong == %@", aSong.idSong];
-                 //fix
                  SongTable *SongFound = [SongTable MR_findFirstWithPredicate: filter];
                  if (!SongFound)
                  {
@@ -188,7 +186,7 @@
                      entitySong.artist = aSong.artist;
                      entitySong.url = aSong.url;
                      entitySong.downloadedFilePath = aSong.downloadedFilePath;
-                     NSLog(@"new added saved song");
+                     //NSLog(@"new added saved song");
                  }
              }
              [localContext MR_saveToPersistentStoreWithCompletion:nil];
