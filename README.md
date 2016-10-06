@@ -6,6 +6,7 @@ Application allow you download and playback music in your iPhone from vk.com acc
 
 ## To fix:
 - save autorization (some problem after update pod 'VK-ios-sdk')
+- updating magical record context when returning from background
 
 ## To do list:
 - filter list of songs to show only downloaded tracks
