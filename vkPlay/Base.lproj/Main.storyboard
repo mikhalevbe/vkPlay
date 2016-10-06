@@ -3,8 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,29 +16,65 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJt-yV-vhC">
-                                <frame key="frameInset" minX="20" minY="122" width="100" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJt-yV-vhC">
+                                <color key="backgroundColor" red="0.88784525829562588" green="0.88784525829562588" blue="0.88784525829562588" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="dRd-7X-E3U"/>
+                                    <constraint firstAttribute="height" constant="50" id="1Dd-hq-7fQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="7us-T8-IxG"/>
                                 </constraints>
-                                <state key="normal" title="sign in"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="sign in">
+                                    <color key="titleColor" red="0.36470588235294116" green="0.50588235294117645" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="authorize:" destination="9pv-A4-QxB" eventType="touchUpInside" id="wyn-PL-0Jc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASq-ob-fYg">
-                                <frame key="frameInset" minX="230" minY="132" width="55" height="30"/>
-                                <state key="normal" title="sign out"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASq-ob-fYg">
+                                <color key="backgroundColor" red="0.88784525829562588" green="0.88784525829562588" blue="0.88784525829562588" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="44i-Em-4te"/>
+                                    <constraint firstAttribute="width" constant="100" id="Fqi-h4-Lu7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="sign out">
+                                    <color key="titleColor" red="0.36470588235294116" green="0.50196078431372548" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="logout:" destination="9pv-A4-QxB" eventType="touchUpInside" id="yre-z1-akt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-4y-SsG">
-                                <frame key="frameInset" minX="142" minY="122" width="48" height="50"/>
-                                <state key="normal" title="playlist"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-4y-SsG">
+                                <color key="backgroundColor" red="0.88784525829562588" green="0.88784525829562588" blue="0.88784525829562588" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3yU-OB-5xU"/>
+                                    <constraint firstAttribute="width" constant="100" id="p7h-Q7-lAA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="playlist">
+                                    <color key="titleColor" red="0.36470588235294116" green="0.50196078431372548" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="bsh-QS-OBM" kind="show" identifier="toPlayList" id="aqT-wf-IeL"/>
                                 </connections>
@@ -47,17 +82,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ASq-ob-fYg" firstAttribute="baseline" secondItem="V2a-4y-SsG" secondAttribute="firstBaseline" id="1az-j1-jtZ"/>
-                            <constraint firstItem="ASq-ob-fYg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="230" id="4Qw-To-uyG"/>
-                            <constraint firstItem="TJt-yV-vhC" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="6Q2-Y2-u8i"/>
-                            <constraint firstItem="V2a-4y-SsG" firstAttribute="leading" secondItem="TJt-yV-vhC" secondAttribute="trailing" constant="29" id="6YO-y0-jxa"/>
-                            <constraint firstItem="TJt-yV-vhC" firstAttribute="top" secondItem="V2a-4y-SsG" secondAttribute="top" id="NPY-Ct-gfC"/>
-                            <constraint firstItem="TJt-yV-vhC" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="WGC-cg-MMw"/>
-                            <constraint firstItem="V2a-4y-SsG" firstAttribute="baseline" secondItem="TJt-yV-vhC" secondAttribute="firstBaseline" id="WlG-ac-DuV"/>
-                            <constraint firstItem="TJt-yV-vhC" firstAttribute="baseline" secondItem="V2a-4y-SsG" secondAttribute="baseline" id="erz-cJ-4jR"/>
-                            <constraint firstItem="ASq-ob-fYg" firstAttribute="leading" secondItem="V2a-4y-SsG" secondAttribute="trailing" constant="40" id="fEb-I3-Nzy"/>
-                            <constraint firstItem="ASq-ob-fYg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="112" id="foy-ga-79R"/>
-                            <constraint firstItem="ASq-ob-fYg" firstAttribute="firstBaseline" secondItem="V2a-4y-SsG" secondAttribute="baseline" id="zPr-W9-yOl"/>
+                            <constraint firstItem="V2a-4y-SsG" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="aN5-8e-N5p"/>
+                            <constraint firstItem="ASq-ob-fYg" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="e9l-uk-lCb"/>
+                            <constraint firstItem="TJt-yV-vhC" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="gZH-b8-bT1"/>
+                            <constraint firstItem="V2a-4y-SsG" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="36" id="htI-2U-je0"/>
+                            <constraint firstItem="ASq-ob-fYg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="36" id="o7M-2x-VHd"/>
+                            <constraint firstItem="TJt-yV-vhC" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="36" id="xnV-cA-QAh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="authorize" id="yb1-3P-Rpm"/>
@@ -74,15 +104,15 @@
             <objects>
                 <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="bsh-QS-OBM" customClass="playListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9vG-Yz-Zc3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="VVg-E7-MlK">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VVg-E7-MlK" id="ikv-0Y-6Dp">
-                                    <frame key="frameInset" width="320" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c45-f9-ZpL">
@@ -106,18 +136,7 @@
                             <outlet property="delegate" destination="bsh-QS-OBM" id="2BR-yJ-hmY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="playlist" id="0gr-rm-kK9">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="ogI-m3-UTa">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="azB-sP-N4u">
-                                <rect key="frame" x="171" y="7" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="playlist" id="0gr-rm-kK9"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="80s-ml-jNr">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
