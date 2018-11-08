@@ -1,3 +1,5 @@
+Update: App doesn't work die to VK has disabled access to music for third party clients...
+
 # vkPlay
 
 Application allow you download and playback music in your iPhone from vk.com account.
